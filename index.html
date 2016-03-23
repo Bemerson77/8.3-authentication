@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>8 3 authentication</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+<div class="container">
+
+    <div class="row">
+      <div class="login-form col-md-6">
+        <form id="login" class="form-signin">
+          <h2 class="form-signin-heading">Please login</h2>
+          <input id="username" type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="signup-form col-md-6">
+      <form id="signup" class="form-signup" method="post">
+        <h2 class="form-signin-heading">No Account? Please sign up</h2>
+        <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up!!!</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <div class="chat-container hidden container">
+    <div class="row">
+      <div class="col-xs-12" id='messagesDiv'></div>
+        <div class="message-form">
+          <input class="form-control" type='text' id='messageInput' placeholder='Message'>
+        </div>
+    </div>
+  </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
